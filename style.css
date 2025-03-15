@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f1f2f3;
+    font-family: sans-serif;
+}
+
+.Top-nav-bar{
+    height: 59px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-bottom: 3px solid orange;
+    position: sticky;
+    z-index: 2;
+
+}
+.logo{
+    width: 60px;
+    margin: 5px 10px;
+}
+.form-control{
+    margin-left: 30px;
+    margin-top: 6px;
+    border: 1px solid orange !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    box-shadow: none !important;
+}
+
+.input-group-text{
+    background: orange !important;
+    margin: 8.5px 10px 3px 0 !important;
+    border: 1px solid orange !important;
+    border-top-right-radius: 20 !important;
+    border-bottom-right-radius: 20 !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    cursor: pointer;
+}
+
+.search-box{
+    width: 60%;
+    display: inline-flex;
+}
+
+.fa-solid {
+    color: #fff;
+}
+
+.menu-bar{
+    width: 40%;
+    height: 59px;
+    float: right;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    float: right;
+}
+.menu-bar ul li{
+    border: 1px solid #fff;
+    list-style-type: none;
+    padding: 15px 35px;
+    text-align: center;
+    background-color: orange;
+    cursor: pointer;
+}
+.menu-bar ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+.fa-basket-shopping{
+    margin-right: 5px;
+}
+
+@media only screen and (max-width:1010px) {
+    .Top-nav-bar{
+        border-bottom: 0;
+        height: 118px;
+    }
+    .search-box{
+        width: 100%;
+    }
+    .menu-bar{
+        width: 100%;
+    }
+    .menu-bar ul{
+        margin: 11px 11px;
+        width: 100%;
+    }
+    .menu-bar ul li{
+        height: 57px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:424px) {
+    .form-control{
+        width: 150px;
+    }
+    .menu-bar ul{
+        margin: 10px 15px;
+        width: 100%;
+        display: inline-flex;
+    }
+    .menu-bar ul li {
+        height: 76px;
+    }
+    .menu-bar ul li a{
+        font-size: 10px 27px;
+        width: 100%;
+    }
+}
+@media only screen and (max-width:328px) {
+    .form-control{
+        width: 150px;
+        display: block;
+    }
+    .menu-bar ul{
+        margin: 10px 20px;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    }
+    @media only screen and (max-width:216px) {
+        .menu-bar ul li{
+            width: 147px;
+        }
+        }
+    
+
+
+
+/* side manu  */
+
+.side-menu{
+    margin-top: 22px;
+    font-size: 14px;
+    width: 15%;
+    background: #ddd;
+    z-index: 2;
+    height: 450px;
+    float: left;
+    display: none;
+}
+
+.side-menu ul{
+    margin-left: 10px;
+}
+
+.side-menu ul li{
+    list-style-type: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: bold;
+}
+
+.side-menu ul li:hover{
+    color: orange;
+}
+
+.side-menu ul li ul{
+    display: none;
+    z-index: 10;
+    top: 77px;
+}
+.side-menu ul li:hover ul{
+    display: block;
+    margin-left: 12%;
+    height: 400px;
+    padding: 0 100px 10px 10px;
+    box-shadow: 1px 1px 4px 1px rgba(0,0, 0,0.5);
+    background: #ececec;
+    position: fixed;
+}
+
+.fa-angle-right{
+    margin-top: 4px;
+    margin-right: 8px;
+    float: right;
+}
+
+#menu-btn,#close-btn{
+    color: orange;
+    margin: 10px;
+    font-size: 30px;
+    display: none;
+}
+@media only screen and (max-width:1010px) {
+    .side-menu{
+        z-index: 20px;
+        width: 34%;
+        top: 163px;
+        position: fixed;
+        background: #f1f3f4;
+        font-size: 12px;
+    }
+    .side-menu ul li ul{
+        top: 188px;
+    }
+    .side-menu ul li:hover ul{
+        margin-left: 26%;
+    }
+    #menu-btn{
+        display: block;
+    }
+}
+
+@media only screen and (max-width:328px) {
+    .side-menu {
+        width: 60%;
+        top: 282px;
+        position: fixed;
+        background: #f1f3f4;
+        font-size: 10px;
+    }
+    .side-menu ul li ul{
+        top: 305px;
+    }
+    .side-menu ul li:hover ul{
+        margin-left: 26%;
+    }
+}
